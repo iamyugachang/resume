@@ -1,0 +1,52 @@
+{
+  "basics": {
+    "name": "Yuga Chang",
+    "label": "Software Engineer",
+    "email": "YOUR_EMAIL@example.com",
+    "phone": "",
+    "url": "https://iamyugachang.github.io/resume",
+    "summary": "Software engineer with expertise in data infrastructure, self-hosted systems, and AI tooling.",
+    "location": { "city": "Taipei", "countryCode": "TW" },
+    "profiles": [
+      { "network": "GitHub", "username": "iamyugachang", "url": "https://github.com/iamyugachang" },
+      { "network": "LinkedIn", "username": "" }
+    ]
+  },
+  "work": [
+    {
+      "name": "YOUR_COMPANY",
+      "position": "Software Engineer",
+      "startDate": "2023-01-01",
+      "endDate": "2025-06-30",
+      "summary": "",
+      "highlights": [
+        "Add quantified achievements here (action verb + what + impact)"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "YOUR_PROJECT",
+      "description": "",
+      "keywords": []
+    }
+  ],
+  "education": [
+    {
+      "institution": "YOUR_SCHOOL",
+      "area": "",
+      "studyType": "",
+      "startDate": "2015-09-01",
+      "endDate": "2019-06-30",
+      "courses": []
+    }
+  ],
+  "skills": [
+    { "name": "Backend / Data", "level": "", "keywords": [] },
+    { "name": "Infrastructure", "level": "", "keywords": [] }
+  ],
+  "languages": [
+    { "language": "Mandarin", "fluency": "Native" },
+    { "language": "English", "fluency": "Professional working proficiency" }
+  ]
+}
