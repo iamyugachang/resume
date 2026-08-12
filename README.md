@@ -14,16 +14,24 @@ npx @jsonresume/cli test
 # Local preview (live reload)
 npx @jsonresume/cli serve
 
-# Export static HTML
-npx @jsonresume/cli export public/index.html --format html --theme flat
+# Export static HTML through the compatibility/print adapter
+npm run render
+
+# Generate a two-page PDF with Windows Chrome from WSL
+npm run pdf
 ```
+
+`render.js` adapts the current JSON Resume schema (`work.name` / `work.url`) to
+the older flat theme (`company` / `website`), formats dates for display, and adds
+print CSS.
 
 ## Deploy
 
-Push to `main` — the GitHub Actions workflow (`.github/workflows/pages.yml`)
-re-renders `index.html` from `resume.json` and publishes to Pages.
+GitHub Pages publishes the rendered root `index.html` directly from `main`.
+Render before committing:
 
 ```bash
+npm run validate && npm run render
 git add -A && git commit -m "update resume" && git push
 ```
 

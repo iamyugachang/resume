@@ -1,15 +1,15 @@
 <!doctype html>
 <html>
 	<head>
-	
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>Yuga Chang</title>
-	
+
+	<title>Yuga (Yu-Chia) Chang</title>
+
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
-	
+
 	<style type="text/css">
 	@import url(
 	https://fonts.googleapis.com/css?family=Lato:400,700
@@ -77,7 +77,7 @@ h4 span:first-child {
 	margin-bottom: 10px;
 }
 .col-sm-12 h4 {
-	margin-top: 12px; 
+	margin-top: 12px;
 }
 .col-sm-12 + .col-sm-12 {
 	margin-top: 30px;
@@ -177,7 +177,7 @@ h4 span:first-child {
 	}
 	.strike-through span {
 		display: block;
-	}	
+	}
 	#header {
 		margin-bottom: 10px;
 		padding: 40px 0;
@@ -187,20 +187,45 @@ h4 span:first-child {
 	}
 }
 
-	</style>
-	
+
+/* Local print and long-title fixes. */
+#publications .strike-through { height: auto; min-height: 20px; border-top: 0; margin-bottom: 4px; }
+#publications .strike-through span:first-child { position: static; display: block; padding-right: 90px; margin-top: 0; }
+#publications .strike-through .date { top: 1px; }
+@media print {
+  @page { size: A4; margin: 7mm 8mm; }
+  html { zoom: 0.90; }
+  body { margin: 0; font-size: 10.5px; }
+  #header { padding: 16px 0; margin-bottom: 6px; }
+  #header h1 { font-size: 27px; }
+  #header h2 { font-size: 18px; }
+  section { margin-top: 9px; }
+  #content h3 { font-size: 20px; }
+  h4 { font-size: 14px; margin-bottom: 4px; }
+  p { line-height: 1.35; }
+  .container { max-width: none; width: 100%; }
+  .col-sm-12 + .col-sm-12 { margin-top: 9px; }
+  #work .summary, #work h4:not(.strike-through) { margin-top: 2px; margin-bottom: 2px; }
+  ul { margin-bottom: 4px; }
+  li { line-height: 1.3; }
+  a { color: #222; }
+  #education { break-before: page; page-break-before: always; }
+  #education, #awards, #publications, #skills, #languages { break-inside: avoid; page-break-inside: avoid; }
+}
+</style>
+
 	</head>
 	<body>
-	
+
 	<header id="header">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-9 col-sm-push-3">
 					<h1>
-						Yuga Chang
+						Yuga (Yu-Chia) Chang
 					</h1>
 					<h2>
-						Software Engineer
+						Senior Data &amp; Machine Learning Engineer
 					</h2>
 				</div>
 			</div>
@@ -215,12 +240,10 @@ h4 span:first-child {
 		<div class="col-sm-9">
 			<div class="row">
 			<div class="col-sm-6">
-				<strong>Email</strong>
-				<div class="email">YOUR_EMAIL@example.com</div>
-			</div>
-			<div class="col-sm-6">
-				<strong>Phone</strong>
-				<div class="phone"></div>
+				<strong>Website</strong>
+				<div class="website">
+					<a href="https://iamyugachang.github.io/resume">https://iamyugachang.github.io/resume</a>
+				</div>
 			</div>
 			</div>
 		</div>
@@ -230,7 +253,7 @@ h4 span:first-child {
 			<h3>About</h3>
 		</aside>
 		<div class="col-sm-9">
-			<p>Software engineer with expertise in data infrastructure, self-hosted systems, and AI tooling.</p>
+			<p>Data and machine learning engineer with experience building large-scale data platforms, recommendation systems, and production AI applications. Delivered systems across the semiconductor and music industries, from lakehouse infrastructure to personalized recommendations serving millions of users.</p>
 		</div>
 	</section>
 	<section id="profiles" class="row">
@@ -241,6 +264,16 @@ h4 span:first-child {
 			<div class="row">
 				<div class="col-sm-6">
 					<strong class="network">
+						LinkedIn
+					</strong>
+					<div class="username">
+						<div class="url">
+							<a href="https://www.linkedin.com/in/iamyugachang">iamyugachang</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<strong class="network">
 						GitHub
 					</strong>
 					<div class="username">
@@ -248,11 +281,6 @@ h4 span:first-child {
 							<a href="https://github.com/iamyugachang">iamyugachang</a>
 						</div>
 					</div>
-				</div>
-				<div class="col-sm-6">
-					<strong class="network">
-						LinkedIn
-					</strong>
 				</div>
 			</div>
 		</div>
@@ -266,27 +294,142 @@ h4 span:first-child {
 			<div class="row">
 			<div class="col-sm-12">
 				<h4 class="strike-through">
-					<span></span>
+					<span>TSMC</span>
 					<span class="date">
-						2023-01-01 — 2025-06-30
+						Aug 2025 — Present
 					</span>
 				</h4>
+				<div class="website pull-right">
+					<a href="https://www.tsmc.com">https://www.tsmc.com</a>
+				</div>
 				<div class="position">
-					Software Engineer
+					Senior Software Engineer
 				</div>
 				<div class="summary">
-					<p></p>
+					<p>Building big data infrastructure and applications for analytics and AI workloads.</p>
 				</div>
 				<h4>Highlights</h4>
 				<ul class="highlights">
-					<li class="bullet">Add quantified achievements here (action verb + what + impact)</li>
+					<li class="bullet">Build a private-cloud big data platform that supports analytics and AI applications across TSMC.</li>
+					<li class="bullet">Develop lakehouse data workflows with Trino, Apache Iceberg, dbt, and Airflow.</li>
+					<li class="bullet">Engineer streaming pipelines with Apache Kafka and Spark Structured Streaming.</li>
+					<li class="bullet">Deploy and operate data applications on Kubernetes.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>KKBOX</span>
+					<span class="date">
+						Apr 2023 — Aug 2025
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.kkbox.com">https://www.kkbox.com</a>
+				</div>
+				<div class="position">
+					Data Scientist
+				</div>
+				<div class="summary">
+					<p>Built production recommendation and generative AI systems for a large-scale music streaming service.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Scaled KKBOX&#x27;s recommendation system to deliver more than 100 million personalized recommendations per day to millions of users.</li>
+					<li class="bullet">Combined DSSM neural networks, collaborative filtering, and model distillation with AWS SageMaker and Amazon Personalize.</li>
+					<li class="bullet">Improved recommendation quality through feature selection and A/B tests that connected NDCG, MAP, and MRR with CTR, favorites, and shares.</li>
+					<li class="bullet">Built an AI Playlist feature with fine-tuned LLMs, retrieval-augmented generation, and music embeddings derived from metadata and audio features. The feature also addressed cold-start recommendations.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>KKBOX</span>
+					<span class="date">
+						Dec 2021 — Apr 2023
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.kkbox.com">https://www.kkbox.com</a>
+				</div>
+				<div class="position">
+					Analytics Engineer
+				</div>
+				<div class="summary">
+					<p>Built and optimized large-scale batch and streaming data systems on AWS and GCP.</p>
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Engineered ETL and CDC pipelines for business analytics, event tracking, and recommendation workloads with Spark, Kafka, and Airflow.</li>
+					<li class="bullet">Optimized Spark jobs and SQL through partitioning, shuffle tuning, bucketing, and skew handling.</li>
+					<li class="bullet">Built data warehouses, marts, and cubes on AWS Athena, with data quality checks for technical metrics and business rules.</li>
+					<li class="bullet">Developed a music app with Flutter and FastAPI that plays original songs and AI-generated piano versions.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Infortrend Technology, Inc.</span>
+					<span class="date">
+						Mar 2021 — Oct 2021
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.infortrend.com">https://www.infortrend.com</a>
+				</div>
+				<div class="position">
+					Research Engineer, Machine Learning in Computer Vision
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Researched image synthesis, face recognition, object tracking, and detection with CycleGAN, StyleGAN, YOLOv4, SORT, and optical flow.</li>
+					<li class="bullet">Pruned and deployed computer vision models to embedded hardware with TensorRT and OpenVINO.</li>
+				</ul>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Ford Motor Company</span>
+					<span class="date">
+						Apr 2019 — Mar 2020
+					</span>
+				</h4>
+				<div class="website pull-right">
+					<a href="https://www.ford.com">https://www.ford.com</a>
+				</div>
+				<div class="position">
+					Research Engineer Intern, Machine Learning in Computer Vision
+				</div>
+				<h4>Highlights</h4>
+				<ul class="highlights">
+					<li class="bullet">Built a YOLOv3 and LSTM system for dangerous truck-driver behavior, improving detection accuracy from 78.65% to 95.47%.</li>
+					<li class="bullet">Reduced driver-monitoring costs by 70%.</li>
 				</ul>
 			</div>
 			</div>
 		</div>
 	</section>
 
-	
+	<section id="volunteer" class="row">
+		<aside class="col-sm-3">
+			<h3>Volunteer</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Alex&#x27;s Lemonade Stand Foundation</span>
+					<span class="date">
+						Sep 2011 — Present
+					</span>
+				</h4>
+				<div class="position">
+					Student Volunteer
+				</div>
+				<div class="summary">
+					<p>Raised funds for childhood cancer research through student-led campaigns in Taiwan and represented the team at a leadership academy at the University of Pennsylvania.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="education" class="row">
 		<aside class="col-sm-3">
 			<h3>Education</h3>
@@ -295,24 +438,83 @@ h4 span:first-child {
 			<div class="row">
 			<div class="col-sm-12">
 				<h4 class="strike-through">
-					<span>YOUR_SCHOOL</span>
+					<span>National Chung Hsing University</span>
 					<span class="date">
-						2015-09-01 — 2019-06-30
+						Jan 2018 — Dec 2020
 					</span>
 				</h4>
 				<div class="area">
-					
+					Computer Science
 				</div>
 				<div class="studyType">
-					
+					Master&#x27;s degree
 				</div>
 			</div>
 			</div>
 		</div>
 	</section>
-	
-	
-	
+
+	<section id="awards" class="row">
+		<aside class="col-sm-3">
+			<h3>Awards</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Best Paper Award</span>
+				</h4>
+				<div class="date pull-right">
+					<em>Awarded</em>
+					Nov 2019
+				</div>
+				<div class="awarder">
+					<em>by</em>
+					<strong>National Chung Hsing University College of Science</strong>
+				</div>
+			</div>
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>Best Paper Award</span>
+				</h4>
+				<div class="date pull-right">
+					<em>Awarded</em>
+					Jun 2019
+				</div>
+				<div class="awarder">
+					<em>by</em>
+					<strong>ACM 9th International Conference on Web Intelligence, Mining and Semantics</strong>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="publications" class="row">
+		<aside class="col-sm-3">
+			<h3>Publications</h3>
+		</aside>
+		<div class="col-sm-9">
+			<div class="row">
+			<div class="col-sm-12">
+				<h4 class="strike-through">
+					<span>An Effective Deep Learning Framework for Detecting Misconduct of the Trucker</span>
+					<span class="date">
+						Jun 2019
+					</span>
+				</h4>
+				<div class="publisher">
+					<em>Published by</em>
+					<strong>ACM Digital Library</strong>
+				</div>
+				<div class="summary">
+					<p>Deep learning system for detecting dangerous truck-driver behavior from video, with 90% accuracy reported in the paper.</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
 	<section id="skills" class="row">
 		<aside class="col-sm-3">
 			<h3>Skills</h3>
@@ -321,13 +523,56 @@ h4 span:first-child {
 			<div class="row">
 			<div class="col-sm-6">
 				<div class="name">
-					<h4>Backend / Data</h4>
+					<h4>Data Engineering</h4>
 				</div>
+				<ul class="keywords">
+					<li>Apache Spark</li>
+					<li>Apache Kafka</li>
+					<li>Apache Airflow</li>
+					<li>Trino</li>
+					<li>Apache Iceberg</li>
+					<li>dbt</li>
+					<li>SQL</li>
+					<li>ETL</li>
+					<li>CDC</li>
+				</ul>
 			</div>
 			<div class="col-sm-6">
 				<div class="name">
-					<h4>Infrastructure</h4>
+					<h4>Machine Learning</h4>
 				</div>
+				<ul class="keywords">
+					<li>Recommendation Systems</li>
+					<li>Deep Learning</li>
+					<li>LLMs</li>
+					<li>RAG</li>
+					<li>A/B Testing</li>
+					<li>Computer Vision</li>
+					<li>SageMaker</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Cloud &amp; Infrastructure</h4>
+				</div>
+				<ul class="keywords">
+					<li>Kubernetes</li>
+					<li>AWS</li>
+					<li>GCP</li>
+					<li>MySQL</li>
+					<li>PostgreSQL</li>
+					<li>Redis</li>
+					<li>DynamoDB</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+				<div class="name">
+					<h4>Application Development</h4>
+				</div>
+				<ul class="keywords">
+					<li>FastAPI</li>
+					<li>Flutter</li>
+				</ul>
 			</div>
 			</div>
 		</div>
@@ -341,7 +586,7 @@ h4 span:first-child {
 			<div class="row">
 			<div class="col-sm-6">
 				<div class="language">
-					<strong>Mandarin</strong>
+					<strong>Mandarin Chinese</strong>
 				</div>
 				<div class="fluency">
 					Native
@@ -359,9 +604,9 @@ h4 span:first-child {
 		</div>
 	</section>
 
-	
+
 
 	</div>
-	
+
 	</body>
 </html>

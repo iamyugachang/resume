@@ -1,52 +1,185 @@
 {
   "basics": {
-    "name": "Yuga Chang",
-    "label": "Software Engineer",
-    "email": "YOUR_EMAIL@example.com",
-    "phone": "",
+    "name": "Yuga (Yu-Chia) Chang",
+    "label": "Senior Data & Machine Learning Engineer",
     "url": "https://iamyugachang.github.io/resume",
-    "summary": "Software engineer with expertise in data infrastructure, self-hosted systems, and AI tooling.",
-    "location": { "city": "Taipei", "countryCode": "TW" },
+    "summary": "Data and machine learning engineer with experience building large-scale data platforms, recommendation systems, and production AI applications. Delivered systems across the semiconductor and music industries, from lakehouse infrastructure to personalized recommendations serving millions of users.",
+    "location": {
+      "city": "Taipei",
+      "region": "Taipei City",
+      "countryCode": "TW"
+    },
     "profiles": [
-      { "network": "GitHub", "username": "iamyugachang", "url": "https://github.com/iamyugachang" },
-      { "network": "LinkedIn", "username": "" }
+      {
+        "network": "LinkedIn",
+        "username": "iamyugachang",
+        "url": "https://www.linkedin.com/in/iamyugachang"
+      },
+      {
+        "network": "GitHub",
+        "username": "iamyugachang",
+        "url": "https://github.com/iamyugachang"
+      }
     ]
   },
   "work": [
     {
-      "name": "YOUR_COMPANY",
-      "position": "Software Engineer",
-      "startDate": "2023-01-01",
-      "endDate": "2025-06-30",
-      "summary": "",
+      "name": "TSMC",
+      "position": "Senior Software Engineer",
+      "startDate": "2025-08-01",
+      "summary": "Building big data infrastructure and applications for analytics and AI workloads.",
       "highlights": [
-        "Add quantified achievements here (action verb + what + impact)"
-      ]
-    }
-  ],
-  "projects": [
+        "Build a private-cloud big data platform that supports analytics and AI applications across TSMC.",
+        "Develop lakehouse data workflows with Trino, Apache Iceberg, dbt, and Airflow.",
+        "Engineer streaming pipelines with Apache Kafka and Spark Structured Streaming.",
+        "Deploy and operate data applications on Kubernetes."
+      ],
+      "url": "https://www.tsmc.com"
+    },
     {
-      "name": "YOUR_PROJECT",
-      "description": "",
-      "keywords": []
+      "name": "KKBOX",
+      "position": "Data Scientist",
+      "startDate": "2023-04-01",
+      "endDate": "2025-08-01",
+      "summary": "Built production recommendation and generative AI systems for a large-scale music streaming service.",
+      "highlights": [
+        "Scaled KKBOX's recommendation system to deliver more than 100 million personalized recommendations per day to millions of users.",
+        "Combined DSSM neural networks, collaborative filtering, and model distillation with AWS SageMaker and Amazon Personalize.",
+        "Improved recommendation quality through feature selection and A/B tests that connected NDCG, MAP, and MRR with CTR, favorites, and shares.",
+        "Built an AI Playlist feature with fine-tuned LLMs, retrieval-augmented generation, and music embeddings derived from metadata and audio features. The feature also addressed cold-start recommendations."
+      ],
+      "url": "https://www.kkbox.com"
+    },
+    {
+      "name": "KKBOX",
+      "position": "Analytics Engineer",
+      "startDate": "2021-12-01",
+      "endDate": "2023-04-01",
+      "summary": "Built and optimized large-scale batch and streaming data systems on AWS and GCP.",
+      "highlights": [
+        "Engineered ETL and CDC pipelines for business analytics, event tracking, and recommendation workloads with Spark, Kafka, and Airflow.",
+        "Optimized Spark jobs and SQL through partitioning, shuffle tuning, bucketing, and skew handling.",
+        "Built data warehouses, marts, and cubes on AWS Athena, with data quality checks for technical metrics and business rules.",
+        "Developed a music app with Flutter and FastAPI that plays original songs and AI-generated piano versions."
+      ],
+      "url": "https://www.kkbox.com"
+    },
+    {
+      "name": "Infortrend Technology, Inc.",
+      "position": "Research Engineer, Machine Learning in Computer Vision",
+      "startDate": "2021-03-01",
+      "endDate": "2021-10-01",
+      "highlights": [
+        "Researched image synthesis, face recognition, object tracking, and detection with CycleGAN, StyleGAN, YOLOv4, SORT, and optical flow.",
+        "Pruned and deployed computer vision models to embedded hardware with TensorRT and OpenVINO."
+      ],
+      "url": "https://www.infortrend.com"
+    },
+    {
+      "name": "Ford Motor Company",
+      "position": "Research Engineer Intern, Machine Learning in Computer Vision",
+      "startDate": "2019-04-01",
+      "endDate": "2020-03-01",
+      "highlights": [
+        "Built a YOLOv3 and LSTM system for dangerous truck-driver behavior, improving detection accuracy from 78.65% to 95.47%.",
+        "Reduced driver-monitoring costs by 70%."
+      ],
+      "url": "https://www.ford.com"
     }
   ],
   "education": [
     {
-      "institution": "YOUR_SCHOOL",
-      "area": "",
-      "studyType": "",
-      "startDate": "2015-09-01",
-      "endDate": "2019-06-30",
+      "institution": "National Chung Hsing University",
+      "area": "Computer Science",
+      "studyType": "Master's degree",
+      "startDate": "2018-01-01",
+      "endDate": "2020-12-31",
       "courses": []
     }
   ],
   "skills": [
-    { "name": "Backend / Data", "level": "", "keywords": [] },
-    { "name": "Infrastructure", "level": "", "keywords": [] }
+    {
+      "name": "Data Engineering",
+      "keywords": [
+        "Apache Spark",
+        "Apache Kafka",
+        "Apache Airflow",
+        "Trino",
+        "Apache Iceberg",
+        "dbt",
+        "SQL",
+        "ETL",
+        "CDC"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "keywords": [
+        "Recommendation Systems",
+        "Deep Learning",
+        "LLMs",
+        "RAG",
+        "A/B Testing",
+        "Computer Vision",
+        "SageMaker"
+      ]
+    },
+    {
+      "name": "Cloud & Infrastructure",
+      "keywords": [
+        "Kubernetes",
+        "AWS",
+        "GCP",
+        "MySQL",
+        "PostgreSQL",
+        "Redis",
+        "DynamoDB"
+      ]
+    },
+    {
+      "name": "Application Development",
+      "keywords": [
+        "FastAPI",
+        "Flutter"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "name": "An Effective Deep Learning Framework for Detecting Misconduct of the Trucker",
+      "publisher": "ACM Digital Library",
+      "releaseDate": "2019-06-01",
+      "summary": "Deep learning system for detecting dangerous truck-driver behavior from video, with 90% accuracy reported in the paper."
+    }
+  ],
+  "awards": [
+    {
+      "title": "Best Paper Award",
+      "date": "2019-11-01",
+      "awarder": "National Chung Hsing University College of Science"
+    },
+    {
+      "title": "Best Paper Award",
+      "date": "2019-06-01",
+      "awarder": "ACM 9th International Conference on Web Intelligence, Mining and Semantics"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Alex's Lemonade Stand Foundation",
+      "position": "Student Volunteer",
+      "startDate": "2011-09-01",
+      "summary": "Raised funds for childhood cancer research through student-led campaigns in Taiwan and represented the team at a leadership academy at the University of Pennsylvania."
+    }
   ],
   "languages": [
-    { "language": "Mandarin", "fluency": "Native" },
-    { "language": "English", "fluency": "Professional working proficiency" }
+    {
+      "language": "Mandarin Chinese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency"
+    }
   ]
 }

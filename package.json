@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "validate": "resume test",
+    "render": "node render.js",
+    "pdf": "npm run render && bash scripts/export-pdf.sh"
   },
   "keywords": [],
   "author": "",
